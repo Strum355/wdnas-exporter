@@ -1,0 +1,21 @@
+.{
+    .name = "wd-dl2100-exporter",
+    .version = "0.0.1",
+    .minimum_zig_version = "0.12.0",
+
+    .dependencies = .{
+        .httpz = .{
+            .url = "https://github.com/karlseguin/http.zig/archive/ee92e0a6feca8b831fea9657dcf69a79af35a07c.tar.gz",
+            .hash = "1220e4cb6dc053a4249a9b745f2d41ada45dbaa6d8732552404a44d986ea9750c439",
+        },
+        .serial = .{
+            .url = "https://github.com/ZigEmbeddedGroup/serial/archive/9c22c7c07b81187c84e55917bbceee253ac7be41.tar.gz",
+            .hash = "122023db23e647dc48f5d55640e645e035ffa0fa6c0c0a0e405022d6cd0cc3e1d47a",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
